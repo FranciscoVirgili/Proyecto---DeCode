@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+.body__index{
+    background-image: url(./imagenes/background.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0%;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header{
+    height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:rgba(224, 212, 197, 0.4);
+}
+
+.logo__estudio{
+    height: 8vh;
+    
+}
+
+.flex__nav{
+    width: 100vw;
+    display: flex;
+}
+
+.flex__nav__lista {
+    display: flex;
+    width: 100%;
+    height: 11vh;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: larger;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.flex__nav__link{
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+li a{
+    text-decoration: none;
+    margin: 0 2.5rem;}
+
+a:hover{
+    opacity: 0.6;
+}
+
+
+
+footer{
+    display: flex;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgba(224, 212, 197, 0.4);
+}
+
+.flex__copyright {
+    text-align: center;
+}
+
+.flex__redessociales {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 15vw;
+}
+
+.footer__logos {
+    width: 30px;
+    height: 100%;
+}
+
+/* PAGINA "ESTUDIO" */
+
+.body__estudio {
+    background-color:  #e2e1da;    
+}
+
+.imagen__estudio {
+    width: 100%;
+}
+
+.descripcion__estudio {
+    content: 100px;
+    padding: 3%;
+    text-align: justify;
+}
+
+.subtitulo__estudio{
+    font-size: 20px;
+    margin: 2% 0;
+    font-weight: bold;
+}
+
+.equipo__estudio {
+    content: 100px;
+    margin: 0 3%;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.arquitecto {
+    margin: 15px 0;
+}
+
+/*   PAGINA "PROYECTOS"  */
+
+.body__proyectos {
+    background-color:  #e2e1da;    
+}
+
+.logo__img{
+    width: 200px;
+    height: 100px;
+    padding: 0px;
+    margin: 0%;
+    border: 0;
+}
+
+.body__proyecto{
+    background: none;
+    background-color:  #e2e1da;
+}
+
+.galeria{
+    display: flex;
+    justify-items: center;
+    overflow-x: scroll;
+}
+
+.proyecto {
+    
+    width: 600px;
+    height: 400px;
+    display: inline;
+}
+
+.proyectoMarina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+}
+
+.proyectoTipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+}
+
+.proyectoGolf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+}
+
+.proyectoBerbena {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+}
+
+/*  PAGINA "CONTACTO"  */
+
+.body__contacto{
+    background: none;
+    background-color:  #e2e1da;
+    }
+.main__contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen__contacto {
+    width: 45vw;
+    position: absolute;
+    margin-left: 23vw;
+    margin-top: 2rem;
+}
+
+.titulo__contacto {
+    margin: 2rem;
+    font-size: 37px;
+}
+.subtitulo__estudio {
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+.flex__datos {
+    height: auto;
+
+}
+
+.lista__contacto {
+    margin: 23px;
+    margin-left: 40px;
+    font-size: 18px;
+    list-style: none;
+}
+
+.ubicacion {
+    margin-bottom: 1rem;
+}
+
+.ubicacion__g{
+    margin-left: 40px;
+    margin-top: 32px;
+    border:solid;
+    border-color:rgba(224, 212, 197, 0.4);
+}
+
+.cv {
+    display: flex;
+    justify-content: flex-start;
+    margin: 2rem;
+} 
+
+/*De acuerdo a las especificaciones del cliente voy a decorar esta caja de CV*/
+
+/*  PAGINA SERVICIO  */
+ 
+.body__servicio {
+    background: none;
+    background-color:  #e2e1da;
+}
+
+.titulo__servicio {
+    text-align: center;
+    font-size: 37px;
+}
+.servicio {
+    margin: 30px;
+    font-size: 20px;
+    margin-left: 85px;
+    width: 615px;
+}
+
+.servicio__descripcion {
+    width: 579px;
+    font-size: 20px;
+    margin: 30px;
+    text-align: justify;
+    margin-left: 85px;
+}
+
+.servicio__formulario {
+    font-size: 20px;
+    width: 100vw;
+    margin-left: 85px;
+}
+
+.nombre {
+    width: 173px;
+}
+.email {
+    width: 251px;
+}
+
+.tipoDeConstruccion {
+    margin-left: 85px;
+    font-size: 20px;
+}
+.selector{
+    width: 227px;
+}
+
+.enviar {
+    width: 77px;
+}
+
+/*  Aplicando Media query  */
+
+@media only screen and (max-width: 768px) {
+    header {
+        width: 100%;
+        height: 12vh;
+    }
+
+    .flex__nav__lista{
+        flex-wrap: wrap;
+    }
+    footer{
+        flex-direction: column-reverse;
+        height: 14vh;
+    }
+
+    footer a{
+        padding: 1rem;
+    }
+
+    .main__contacto{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .imagen__contacto{
+        position: relative;
+        margin: auto;
+        margin-top: 1rem;
+        width: 300px;
+    }
+    .titulo__contacto {
+        margin: 2rem;
+        font-size: 30px;
+    }
+    .subtitulo__estudio {
+        margin-bottom: 20px;
+        margin-left: 40px;
+        font-size: 20px;
+    }
+    .servicio{
+      width: fit-content;
+    }
+    .titulo__servicio{
+      margin: 1rem;
+    }
+    .main__servicio h2{
+      margin: 1rem;
+    }
+    .servicio__descripcion{
+        width: fit-content;
+        text-align: justify;
+    }
+    .servicio__formulario{
+        width: fit-content;
+    }
+    .tipoDeConstruccion{
+        width: fit-content;
+    }
+}   
