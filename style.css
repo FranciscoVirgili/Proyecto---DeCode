@@ -19,7 +19,7 @@
     justify-content: space-between;
 }
 
-header{
+header {
     height: 10vh;
     display: flex;
     flex-wrap: wrap;
@@ -53,14 +53,6 @@ header{
     font-weight: bold;
     text-decoration: none;
 }
-li a{
-    text-decoration: none;
-    margin: 0 2.5rem;}
-
-a:hover{
-    opacity: 0.6;
-}
-
 
 
 footer{
@@ -98,11 +90,12 @@ footer{
     width: 100%;
 }
 
-.descripcion__estudio {
+.descripcion__estudio{
     content: 100px;
     padding: 3%;
     text-align: justify;
 }
+
 
 .subtitulo__estudio{
     font-size: 20px;
@@ -140,46 +133,7 @@ footer{
     background-color:  #e2e1da;
 }
 
-.galeria{
-    display: flex;
-    justify-items: center;
-    overflow-x: scroll;
-}
 
-.proyecto {
-    
-    width: 600px;
-    height: 400px;
-    display: inline;
-}
-
-.proyectoMarina {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: large;
-}
-
-.proyectoTipal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: large;
-}
-
-.proyectoGolf {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: large;
-}
-
-.proyectoBerbena {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: large;
-}
 
 /*  PAGINA "CONTACTO"  */
 
@@ -196,11 +150,12 @@ footer{
     width: 45vw;
     position: absolute;
     margin-left: 23vw;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 .titulo__contacto {
-    margin: 2rem;
+    margin-top: 10px;
+    margin-left: 350px;
     font-size: 37px;
 }
 .subtitulo__estudio {
@@ -208,14 +163,20 @@ footer{
     font-size: 20px;
 }
 
+.parrafo__estudio {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+
 .flex__datos {
     height: auto;
 
 }
 
 .lista__contacto {
-    margin: 23px;
-    margin-left: 40px;
+    margin: 18px;
+    margin-left: 8px;
     font-size: 18px;
     list-style: none;
 }
@@ -251,7 +212,7 @@ footer{
     font-size: 37px;
 }
 .servicio {
-    margin: 30px;
+    margin: -10px;
     font-size: 20px;
     margin-left: 85px;
     width: 615px;
