@@ -14,9 +14,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 
-<body class="body__index body__proyecto">
-    <header>
-      <nav class="navbar navbar-light fixed-top ">
+<body class="body__proyecto">
+  <header>
+    <nav class="navbar navbar-light fixed-top ">
         <div class="container-fluid">
           <a href="./Index.html"><img src="./imagenes/Deco.png" alt="Decode" class="logo__estudio"></a>
           <button class="navbar-toggler vw-28" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -24,7 +24,7 @@
           </button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" width: 28vw style="background-color: rgb(223 220 211);">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">DeCode</h5>
+              <a href="./Index.html"><h5 class="offcanvas-title" id="offcanvasNavbarLabel">DeCode</h5></a>
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <ul class="flex__nav__lista flex-column vh-100 justify-content-start align-items-center">
@@ -35,11 +35,12 @@
             </ul> 
         </div>
       </nav>
-    </header>
-    
-    <main>
+  </header>
+  
+
+    <main class="main__proyecto">
         
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="width: 70%;">
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="10000">
                 <img src="./imagenes/proyecto1.jpeg" class="d-block w-100" alt="proyecto1">
@@ -66,37 +67,60 @@
     </main>
 
     <div class="proyecto__container d-flex">
-        <div class="row row-cols-2 m-5">
-          <div class="col-lg-3 col-md-6 col-sm-12">
-              <img src="./imagenes/proyecto1.jpeg" width="100%" height="200px">
+        <div class="contenedor row row-cols-2 m-5">
+          <div class="contenedor__2 col-lg-3 col-md-6 col-sm-12">
+              <img src="./imagenes/proyecto1.jpeg" width="240vw" height="250px">
           </div>
-          <div class="col-lg-9 col-md-6 col-sm-12">
+          <div class="contenedor__tipal col-lg-9 col-md-6 col-sm-12">
             <h5>Proyecto Marina</h5>
-            <p class="text-align-center">Contornos de trazos finos y simples. La elegancia resalta en este proyecto por la riqueza en el diseño y la decoración. Ubicado en el country "Las Marinas" al oeste de la Provincia de Salta</p>
+            <p class="text-align-center">Contornos de trazos finos y simples. La elegancia resalta en este proyecto por la riqueza en el diseño y la decoración.</p>
+            <ul class="iconos">
+              <li><img src="./iconos/grupo-de-chat.png" class="personas"><span>Arquitectos:</span><span>Santiago Zenteno</span></li>
+              <li><img src="./iconos/zona.png" class="area"><span>Area:</span><span>700mts <sup>2</sup></span></li>
+              <li><img src="./iconos/cliente.png" class="cliente"><span>Cliente:</span><span>Saltapor</span></li>
+              <li><img src="./iconos/ubicacion.png" class="ubicación"><span>Ubiación:</span><span>Country "Las Marinas" al norte de la Ciudad de Salta</span></li>
+            </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 col-sm-12">
-              <img src="./imagenes/proyecto2.jpeg" width="100%" height="200px">
+              <img src="./imagenes/proyecto2.jpeg" width="240vw" height="250px">
           </div>
           <div class="col-lg-9 col-md-6 col-sm-12">
             <h5>Proyecto Tipal</h5>
-            <p>Visión. Este proyecto refleja la imaginación del arquitecto en la correcta utilización de los espacios. Creatividad en cada rincón. El proyecto se encuentra al sur de la Provincia de Salta, en el prestigioso barrio privado "El Tipal"</p>
+            <p>Visión. Este proyecto refleja la imaginación del arquitecto en la correcta utilización de los espacios. Creatividad en cada rincón.</p>
+            <ul class="iconos">
+              <li><img src="./iconos/grupo-de-chat.png" class="personas"><span>Arquitectos:</span><span>Santiago Zenteno</span></li>
+              <li><img src="./iconos/zona.png" class="area"><span>Area:</span><span>500mts <sup>2</sup></span></li>
+              <li><img src="./iconos/cliente.png" class="cliente"><span>Cliente:</span><span>Casa Privada</span></li>
+              <li><img src="./iconos/ubicacion.png" class="ubicación"><span>Ubiación:</span><span>Barrio Privado "El Tipal" al oeste de la Ciudad de Salta</span></li>
+            </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 col-sm-12">
-              <img src="./imagenes/proyecto3.jpeg" width="100%" height="200px">
+              <img src="./imagenes/proyecto3.jpeg" width="240vw" height="250px">
           </div>
           <div class="col-lg-9 col-md-6 col-sm-12">
             <h5>Proyecto Golf</h5>
-            <p>Arquitectura minimalista. Respeto de las formas con el proposito de conseguir un espacio funcional y más aprovechable. El proyecto Golf persigue la buscada de la escencia de cada elemento. Ubicado en el barrio de Tres Cerritos al este de la Provincia de Salta</p>
-
+            <p>Arquitectura minimalista. Respeto de las formas con el proposito de conseguir un espacio funcional y más aprovechable. El proyecto Golf persigue la buscada de la escencia de cada elemento.</p>
+            <ul class="iconos">
+              <li><img src="./iconos/grupo-de-chat.png" class="personas"><span>Arquitectos:</span><span>Santiago Zenteno</span></li>
+              <li><img src="./iconos/zona.png" class="area"><span>Area:</span><span>460mts <sup>2</sup></span></li>
+              <li><img src="./iconos/cliente.png" class="cliente"><span>Cliente:</span><span>Casa Privada</span></li>
+              <li><img src="./iconos/ubicacion.png" class="ubicación"><span>Ubiación:</span><span>Tres Cerritos al este de la Ciudad de Salta</span></li>
+            </ul>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <img src="./imagenes/proyecto4.jpeg" width="100%" height="200px">
+            <img src="./imagenes/proyecto4.jpeg" width="240vw" height="250px">
           </div>
           <div class="col-lg-9 col-md-6 col-sm-12">
             <h5>Proyecto Berbena</h5>
-            <p>Redefinción del espacio donde el usuario puede sentir la armonía entre la naturaleza y el diseño. En cuanto a su materialidad, buscamos que el proyecto estuviera compuesto por elementos básicos que generaran una limpieza visual permitiendo resaltar los espacios verdes con los relieves de la construcción. Ubicado en el country "La Berbena" al norte de la Provincia de Salta</p>
+            <p>Redefinción del espacio donde el usuario puede sentir la armonía entre la naturaleza y el diseño. En cuanto a su materialidad, buscamos que el proyecto estuviera compuesto por elementos básicos que generaran una limpieza visual permitiendo resaltar los espacios verdes con los relieves de la construcción.</p>
+            <ul class="iconos">
+              <li><img src="./iconos/grupo-de-chat.png" class="personas"><span>Arquitectos:</span><span>Santiago Zenteno</span></li>
+              <li><img src="./iconos/zona.png" class="area"><span>Area:</span><span>630mts <sup>2</sup></span></li>
+              <li><img src="./iconos/cliente.png" class="cliente"><span>Cliente:</span><span>Saltapor</span></li>
+              <li><img src="./iconos/ubicacion.png" class="ubicación"><span>Ubiación:</span><span>Country "La Berbena" al sur de la Ciudad de Salta</span></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -105,19 +129,19 @@
 
 
     <footer>
-        <h3>DeCode Estudio de Arquitectura - Todos los derechos reservados</h3>  
-        <div class="flex__redessociales">
-            <a href="https://www.facebook.com" target="_blank">
-                <img src="./imagenes/facebook.svg" class="footer__logos">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="./imagenes/twitter.svg" class="footer__logos">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="./imagenes/instagram.svg"class="footer__logos">
-            </a>
-        </div>
-    </footer>
+      <h3 style="font-size: medium;">DeCode Estudio de Arquitectura - Todos los derechos reservados</h3>  
+      <div class="flex__redessociales">
+          <a href="https://www.facebook.com" target="_blank">
+              <img src="./iconos/facebook.svg" class="footer__logos">
+          </a>
+          <a href="https://twitter.com" target="_blank">
+              <img src="./iconos/twitter.svg" class="footer__logos">
+          </a>
+          <a href="https://instagram.com" target="_blank">
+              <img src="./iconos/instagram.svg"class="footer__logos">
+          </a>
+      </div>
+  </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>

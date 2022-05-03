@@ -15,8 +15,8 @@
 </head>
 
 <body class="body__contacto">
-    <header>
-        <nav class="navbar navbar-light fixed-top ">
+        <header>
+         <nav class="navbar navbar-light fixed-top ">
             <div class="container-fluid">
               <a href="./Index.html"><img src="./imagenes/Deco.png" alt="Decode" class="logo__estudio"></a>
               <button class="navbar-toggler vw-28" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -24,7 +24,7 @@
               </button>
               <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" width: 28vw style="background-color: rgb(223 220 211);">
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">DeCode</h5>
+                  <a href="./Index.html"><h5 class="offcanvas-title" id="offcanvasNavbarLabel">DeCode</h5></a>
                   <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <ul class="flex__nav__lista flex-column vh-100 justify-content-start align-items-center">
@@ -35,52 +35,45 @@
                 </ul> 
             </div>
           </nav>
-    </header>
+        </header>
     
-    <main class="main__contacto">
-    
-    <div class="imagen__contacto">
-        <img src="./imagenes/oficina.jpeg" alt="imagencontacto" class="imagen__contacto">
-    </div>  
-    
-    <h2 class="titulo__contacto"> Conociéndonos</h2>
-    <h3 class="subtitulo__estudio">Datos de Contacto</h3>
-    
-
-    <div class="flex__datos">
-        <ul class="lista__contacto">
-            <li>santiagozenteno@decode.com</li>
-            <li>+54387-456132</li>
-            <li>Adolfo Guemes 493</li>
-            <li>Ciudad de Salta - 4400</li>
-        </ul>
-    </div>
-    <div class="ubicacion">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.3496688565087!2d-65.41971898555968!3d-24.783477384090293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3b76c348a81%3A0x9edbf15ca793f39f!2sDr.%20A.%20G%C3%BCemes%20493%2C%20A4400%20Salta!5e0!3m2!1ses-419!2sar!4v1649213117273!5m2!1ses-419!2sar" class="ubicacion__g"></iframe> 
-    </div>
-
-    
-
-    <form class="cv">
-        <div class="titulo__cv">
-        <h3>Sumate al equipo y dejanos tu curriculum</h3>
-        <div class="mb-3">
-            <label for="formFile" class="form-label"></label>
-            <input class="form-control" type="file" id="formFile">
+    <section class="flex__datos">
+            <h3 class="titulo__contacto">Datos de Contacto</h3>
+            <ul class="lista__contacto">
+                <li>santiagozenteno@decode.com</li>
+                <li>+54387-456132</li>
+                <li>Adolfo Guemes 493</li>
+                <li>Ciudad de Salta - 4400</li>
+            </ul>
+        
+        <div class="ubicacion">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.3496688565087!2d-65.41971898555968!3d-24.783477384090293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3b76c348a81%3A0x9edbf15ca793f39f!2sDr.%20A.%20G%C3%BCemes%20493%2C%20A4400%20Salta!5e0!3m2!1ses-419!2sar!4v1649213117273!5m2!1ses-419!2sar" class="ubicacion__g"></iframe> 
         </div>
-    </form>
-    </main>
+
+    
+
+        <form class="cv">
+            <div class="titulo__cv">
+            <h3>Sumate al equipo y dejanos tu curriculum</h3>
+            <div class="mb-3">
+                <label for="formFile" class="form-label"></label>
+                <input class="form-control" type="file" id="formFile">
+            </div>
+        </form>
+    
+    </section>
+    
     <footer>
-        <h3>DeCode Estudio de Arquitectura - Todos los derechos reservados</h3>  
+        <h3 style="font-size: medium;">DeCode Estudio de Arquitectura - Todos los derechos reservados</h3>  
         <div class="flex__redessociales">
             <a href="https://www.facebook.com" target="_blank">
-                <img src="./imagenes/facebook.svg" class="footer__logos">
+                <img src="./iconos/facebook.svg" class="footer__logos">
             </a>
             <a href="https://twitter.com" target="_blank">
-                <img src="./imagenes/twitter.svg" class="footer__logos">
+                <img src="./iconos/twitter.svg" class="footer__logos">
             </a>
             <a href="https://instagram.com" target="_blank">
-                <img src="./imagenes/instagram.svg"class="footer__logos">
+                <img src="./iconos/instagram.svg"class="footer__logos">
             </a>
         </div>
     </footer>
