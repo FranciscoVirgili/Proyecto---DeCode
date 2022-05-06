@@ -1,0 +1,48 @@
+header {
+  color: rgba(224, 212, 197, 0.4);
+  display: flex;
+  height: 10vh; }
+  header .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    header .navbar .container-fluid {
+      width: 100%;
+      padding-right: var(--bs-gutter-x, 0.75rem);
+      padding-left: var(--bs-gutter-x, 0.75rem);
+      margin-right: auto;
+      margin-left: auto; }
+      header .navbar .container-fluid .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+        transition: box-shadow .15s ease-in-out; }
+        header .navbar .container-fluid .navbar-toggler .flex__nav__lista {
+          display: flex;
+          width: 100%;
+          font-size: larger;
+          list-style-type: none;
+          flex-wrap: wrap; }
+          header .navbar .container-fluid .navbar-toggler .flex__nav__lista li {
+            display: list-item;
+            text-align: -webkit-match-parent; }
+
+footer {
+  display: flex;
+  color: rgba(224, 212, 197, 0.4);
+  height: 10vh;
+  justify-content: space-around;
+  align-items: center; }
+  footer h3 {
+    font-size: 24px; }
+    footer h3 .flex__redessociales {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 15vw; }

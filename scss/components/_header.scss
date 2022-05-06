@@ -1,0 +1,47 @@
+header{
+    color: $color-header;
+    display:$display;
+    height: $height;
+
+    .navbar{
+    display: $display;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    
+        .container-fluid{
+            width: 100%;
+            padding-right: var(--bs-gutter-x,.75rem);
+            padding-left: var(--bs-gutter-x,.75rem);
+            margin-right: auto;
+            margin-left: auto;
+    
+            .navbar-toggler{
+                padding: 0.25rem 0.75rem;
+                font-size: 1.25rem;
+                line-height: 1;
+                background-color: transparent;
+                border: 1px solid transparent;
+                border-radius: 0.25rem;
+                transition: box-shadow .15s ease-in-out;
+    
+                .flex__nav__lista{
+                        display: $display;
+                        width: 100%;
+                        font-size: larger;
+                        list-style-type: none;
+                        flex-wrap: wrap;
+    
+                    li{
+                        display: list-item;
+                        text-align: -webkit-match-parent;
+    }
+        }
+            }
+                }
+                    }
+}
+
+

@@ -53,7 +53,6 @@ header {
 footer{
     display: flex;
     height: 10vh;
-    display: flex;
     justify-content: space-around;
     align-items: center;
     background-color:rgba(224, 212, 197, 0.4);
@@ -404,5 +403,4 @@ h2 {
     .tipoDeConstruccion{
         width: fit-content;
     }
-
 }   
