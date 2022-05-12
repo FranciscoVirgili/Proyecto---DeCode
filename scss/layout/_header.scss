@@ -1,0 +1,30 @@
+header {
+    height: $height;
+    display: $display;
+    flex-wrap: wrap;
+    background-color: map-get($colores, encabezado);
+
+    .logo__estudio{
+        height: 8vh;
+        
+    }
+    
+    .flex__nav__lista {
+        @extend %flex-center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: flex-start;
+        font-size: larger;
+        list-style-type: none;
+        flex-wrap: wrap;
+    }
+    
+    .flex__nav__link{
+        font-size: 1.2rem;
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+}

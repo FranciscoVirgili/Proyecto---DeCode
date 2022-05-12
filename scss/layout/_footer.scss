@@ -1,0 +1,26 @@
+footer{
+    @extend %flex-center;
+    justify-content: space-around;
+    background-color: map-get($colores, encabezado );
+
+
+    .flex__copyright {
+    text-align: center;
+    }
+
+    .flex__redessociales {
+    display: $display;
+    justify-content: space-around;
+    align-items: center;
+    width: 15vw;
+    }
+
+    .footer__logos {
+    width: 25px;
+    height: 100%;
+    }
+
+    h2{
+        font-size: map-get($tamanio-tipografia, subtitulos);
+    }
+}

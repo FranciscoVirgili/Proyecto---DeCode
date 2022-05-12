@@ -1,48 +1,136 @@
-header {
-  color: rgba(224, 212, 197, 0.4);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Dosis', sans-serif; }
+
+/* MAPS */
+/* EXTEND */
+header .flex__nav__lista, footer {
   display: flex;
-  height: 10vh; }
-  header .navbar {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    header .navbar .container-fluid {
-      width: 100%;
-      padding-right: var(--bs-gutter-x, 0.75rem);
-      padding-left: var(--bs-gutter-x, 0.75rem);
-      margin-right: auto;
-      margin-left: auto; }
-      header .navbar .container-fluid .navbar-toggler {
-        padding: 0.25rem 0.75rem;
-        font-size: 1.25rem;
-        line-height: 1;
-        background-color: transparent;
-        border: 1px solid transparent;
-        border-radius: 0.25rem;
-        transition: box-shadow .15s ease-in-out; }
-        header .navbar .container-fluid .navbar-toggler .flex__nav__lista {
-          display: flex;
-          width: 100%;
-          font-size: larger;
-          list-style-type: none;
-          flex-wrap: wrap; }
-          header .navbar .container-fluid .navbar-toggler .flex__nav__lista li {
-            display: list-item;
-            text-align: -webkit-match-parent; }
+  height: 10vh;
+  align-items: center; }
+
+.imagen__estudio, .descripcion__estudio, .equipo__descripcion {
+  margin-top: 10vh;
+  margin-left: 10vh; }
+
+/* MIXIN */
+/* para llamar el mixin
+
+@include flexbox ($direction, $justify) si o si pasarlos en el orden declarado
+osea en la pagina que queres las variables pones:
+@include flexbox (column, center) ej.
+
+
+*/
+header {
+  height: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(224, 212, 197, 0.4); }
+  header .logo__estudio {
+    height: 8vh; }
+  header .flex__nav__lista {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: flex-start;
+    font-size: larger;
+    list-style-type: none;
+    flex-wrap: wrap; }
+  header .flex__nav__link {
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bold;
+    text-decoration: none; }
 
 footer {
-  display: flex;
-  color: rgba(224, 212, 197, 0.4);
-  height: 10vh;
   justify-content: space-around;
-  align-items: center; }
-  footer h3 {
-    font-size: 24px; }
-    footer h3 .flex__redessociales {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      width: 15vw; }
+  background-color: rgba(224, 212, 197, 0.4); }
+  footer .flex__copyright {
+    text-align: center; }
+  footer .flex__redessociales {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 15vw; }
+  footer .footer__logos {
+    width: 25px;
+    height: 100%; }
+  footer h2 {
+    font-size: 20px; }
+
+.body__index {
+  background-image: url(../imagenes/background.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0%;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.body__estudio {
+  background-color: #e2e1da; }
+
+.imagen__estudio {
+  width: 90%;
+  margin-top: 10vh;
+  margin-right: 12vw;
+  margin-bottom: 12vh;
+  margin-left: 10vw; }
+
+h2 {
+  margin-top: 15px !important;
+  margin-left: 75px;
+  font-size: 27px !important; }
+
+.descripcion__estudio {
+  width: 95%; }
+
+.descripcion__estudio p {
+  font-size: 14px;
+  margin-left: 68px;
+  animation-duration: 3s;
+  animation-name: slidein;
+  content: 100px;
+  padding: 1%;
+  text-align: justify; }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+
+.subtitulo__estudio {
+  font-size: 20px;
+  margin: 2% 0;
+  font-weight: bold; }
+
+.estudio__grid {
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-top: 10vh;
+  margin-right: 12vw;
+  margin-bottom: 12vh;
+  margin-left: 10vw; }
+
+.equipo__descripcion {
+  text-align: justify; }
+
+.arquitecto {
+  text-align: center;
+  font-size: 20px; }
+
+.imagen__arquitecto {
+  height: 42vh;
+  filter: grayscale(0.8); }

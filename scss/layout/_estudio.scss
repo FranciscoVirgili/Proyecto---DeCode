@@ -1,0 +1,71 @@
+.body__estudio {
+    background-color:  $color-principal;    
+}
+
+.imagen__estudio {
+    width: 90%;
+    @include margenes(12vw, 12vh);
+   @extend %margenestl;
+}
+
+h2 {
+    margin-top: 15px !important;
+    margin-left: 75px;
+    font-size: 27px !important;
+}
+
+.descripcion__estudio{
+    width: 95%;
+    @extend %margenestl;
+    
+}
+
+.descripcion__estudio p{
+    font-size: map-get($tamanio-tipografia, parrafos);
+    margin-left: 68px;
+    animation-duration: 3s ;
+    animation-name: slidein ;
+    content: 100px;
+    padding: 1%;
+    text-align: justify;
+
+}
+@keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 300%
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+}
+
+.subtitulo__estudio{
+    font-size: map-get($tamanio-tipografia, subtitulos);
+    margin: 2% 0;
+    font-weight: bold;
+}
+
+.estudio__grid{
+    font-size: map-get($tamanio-tipografia, parrafos);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    @include margenes(12vw, 12vh)
+}
+
+.equipo__descripcion{
+    @extend %margenestl;
+    text-align: justify;
+}
+
+.arquitecto {
+    text-align: center;
+    font-size: map-get($tamanio-tipografia, subtitulos);
+}
+
+.imagen__arquitecto{
+    height: 42vh;
+    filter: grayscale(0.8);}

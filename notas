@@ -1,0 +1,92 @@
+/* 1) hacer variables de tamaños de tipografias tanto en los títulos, subtitulos como párrafos
+Ella hace: 
+
+    / map/
+    $tamanio-tipografias {
+    titulos: 27 px;
+    subtitulos: 25px;
+    parrafo: 23 px;
+    }
+
+    $color {
+        color-principal: blue;
+        color-secundario: red; }
+    
+    .mobile {
+        color: map-get($color, color-principal)
+
+y despues llama esos elementos. Agarra y anota todos los valores para resumirlos 
+
+para aplicarlo por ej en _header: acá la función es:
+    h3{ font-size: map-get ($tamanio-tipografia, parrafos);
+}
+
+2) los LI, etc
+
+VEMOS LOS EXTEND: Se usa signo % y no $. 
+
+    %flex-center: {  
+        aca ponemos todas las propiedades y valor por ej:
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+ y para llamar luego al extend en lo que quieras agregarle, le pones:
+
+ .flex__nav{
+     @extend %flex-center;
+
+MIXIN: yo voy a tener variables fijas y variables que van cambiando, por lo que le puedo ir asignando diferentes parámetros.
+Por ej:
+    Vas a la página variable y armas tu mixin, ej:
+
+    @mixin botones ($bg-color){
+        display: flex;
+        flex-direction: $direction;
+        justify-content: $justify;
+        widht: fit-content; esto va a estar fijo
+        padding: 5px, 10 px;
+        background-color: $bg-color; esto lo podes ir asignando y va ir cambiando.
+        border: solid
+    }
+Despues vas a tu página que quieras cambiar y al elemento/clase/id, etc
+
+    .mobile{
+        @include flexbox (column-reverse, flex-start, center, red)
+
+CONDICIONALES: 
+            @mixin botones ($bg-color){
+        display: flex;
+        flex-direction: $direction;
+        justify-content: $justify;
+        widht: fit-content; esto va a estar fijo
+        padding: 5px, 10 px;
+        background-color: $bg-color; esto lo podes ir asignando y va ir cambiando.
+        border: solid;
+
+    @ if $direction == column  {
+        justify-content: center;     
+    }
+        @else {
+            justify-content_ space-evenly;
+        }
+
+    BUCLE FOR! : Esto para las imagenes por ejemplo que toman igual valores. Primero vas a llamarlas
+
+    @for $item from 1 through 3 {
+        .imagen# {$item}{
+            width: 200px;
+            height: 200px;
+        }
+    }
+    Esto porque tenías en el css muchas imagenes:
+        .imagen1 {
+            width: 200px;
+            height: 200px; }
+         .imagen2 {
+            width: 200px;
+            height: 200px; }    
+         .imagen3 {
+            width: 200px;
+            height: 200px; }       
+*/

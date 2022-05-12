@@ -1,0 +1,51 @@
+$color-principal: #e2e1da;    
+$display: flex;
+$height: 10vh;
+
+/* MAPS */
+
+$tamanio-tipografia: (
+    titulos: 25px,
+    subtitulos: 20px,
+    parrafos: 14px,
+    );
+
+$colores:(
+   principal: $color-principal,
+   encabezado: rgba(224, 212, 197, 0.4),
+);
+
+/* EXTEND */
+
+%flex-center {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+};
+
+%margenestl {
+    margin-top: 10vh;
+    margin-left: 10vh;
+}
+
+/* MIXIN */
+
+@mixin margenes ($margin-rigth, $margin-bottom) {
+    margin-top: 10vh;
+    margin-right: $margin-rigth;
+    margin-bottom: $margin-bottom;
+    margin-left: 10vw;
+};
+
+
+
+
+/* para llamar el mixin
+
+@include flexbox ($direction, $justify) si o si pasarlos en el orden declarado
+osea en la pagina que queres las variables pones:
+@include flexbox (column, center) ej.
+
+
+*/
+
