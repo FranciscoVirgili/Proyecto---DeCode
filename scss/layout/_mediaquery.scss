@@ -1,0 +1,114 @@
+@media only screen and (max-width: 768px) {
+    header {
+        width: fit-content;
+        height: 12vh;
+        color: map-get($colores, encabezado);
+    }
+
+    .flex__nav__lista{
+        flex-wrap: wrap;
+    }
+    footer{
+        flex-direction: column-reverse;
+        height: 14vh;
+    }
+
+    footer a{
+        padding: 1rem;
+    }
+
+    .contenedor{
+        flex-direction: column;
+    }
+
+    .contenedor div{
+        width: 100% !important;
+    }
+
+    .estudio__grid{
+        width: 80%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .descripcion__estudio {
+       width: 80%;
+       margin: $margin;
+    }
+
+    .descripcion__estudio h2{
+        margin: $margin;
+        
+    }
+
+    .descripcion__estudio p{
+        margin:auto;
+        margin-top: 5vh;
+    }
+
+    .equipo__descripcion{
+        margin-bottom: 2vh;
+        width: 80vw;
+    }
+
+    .arquitecto{
+        margin-bottom: 5vh;
+    }
+
+    .main__contacto{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .imagen__contacto{
+        position: relative;
+        margin: auto;
+        margin-top: 1rem;
+        width: 300px;
+    }
+    .titulo__contacto {
+        margin: 2rem;
+        font-size: 30px;
+    }
+    .subtitulo__estudio {
+        margin-bottom: 20px;
+        margin-left: 40px;
+        font-size: 20px;
+    }
+
+    .ubicacion__g{
+    width: 40%;
+    }
+
+    .servicio{
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: fit-content;
+    }
+    .titulo__servicio{
+      margin: 1rem;
+    }
+
+    .main__servicio{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .servicio{
+        width: 100%;
+        margin-top: 14vh;
+        margin-left: 10vw;
+
+
+    }
+
+    .servicio__formulario{
+        width: fit-content;
+    }
+    .tipoDeConstruccion{
+        width: fit-content;
+    }
+    
+}

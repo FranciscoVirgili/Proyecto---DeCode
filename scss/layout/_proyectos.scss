@@ -1,0 +1,43 @@
+.body__proyectos {
+    background-color:  #e2e1da;    
+}
+
+.logo__img{
+    width: 200px;
+    height: 100px;
+    padding: 0px;
+    margin: 0%;
+    border: 0;
+}
+
+.body__proyecto{
+    background: none;
+    background-color:  #e2e1da;
+}
+
+.iconos{
+    list-style: none;
+}
+
+.iconos img{
+    @extend %iconos;
+}
+
+.main__proyecto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+}
+
+.proyecto__container span {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 6px;
+    margin-bottom: 8px;
+}
+
+.contenedor div{
+    margin-bottom: 35px;
+}

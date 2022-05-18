@@ -1,0 +1,51 @@
+.body__servicio {
+    background: none;
+    background-color:  #e2e1da;
+}
+
+.titulo__servicio {
+    text-align: center;
+    font-size: 37px;
+}
+
+.servicio h2{
+    font-size: map-get($tamanio-tipografia, titulos );
+    margin-top: 5vh;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.servicio p{
+    font-size: 20px;
+    width: 80%;
+    margin-left: 3vw;
+    margin-bottom: 10vh;
+    text-align: justify;
+
+}
+
+.servicio__formulario {
+    font-size: 20px;
+    width: 100vw;
+    margin-left: 85px;
+}
+
+.nombre {
+    width: 173px;
+}
+.email {
+    width: 251px;
+}
+
+.tipoDeConstruccion {
+    margin-left: 85px;
+    font-size: 20px;
+}
+.selector{
+    width: 227px;
+}
+
+
+.enviar {
+    width: 77px;
+}

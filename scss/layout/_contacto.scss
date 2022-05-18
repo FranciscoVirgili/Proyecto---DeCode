@@ -1,0 +1,60 @@
+.body__contacto{
+    background-color: $color-principal;
+}
+
+.flex__datos img{
+    @extend %iconos;
+}
+
+
+.main__contacto {
+display: flex;
+flex-direction: column;
+}
+
+.imagen__contacto {
+width: 45vw;
+position: absolute;
+margin-left: 23vw;
+margin-top: 4rem;
+}
+
+.titulo__contacto {
+margin-left: 7vw;
+font-size:map-get($tamanio-tipografia, titulo)
+}
+
+.flex__datos {
+height: 80%;
+color: black;
+margin-top: 10vh;
+margin-bottom:14vh;
+}
+
+.lista__contacto {
+margin-left: 7vw;
+font-size: 18px;
+list-style: none;
+margin-top: 3vh;
+}
+
+.lista__contacto li{
+    padding: 1rem;
+}
+
+.ubicacion {
+margin-bottom: 1rem;
+width: 100%;
+}
+
+.ubicacion__g{
+width: 80%;
+height: 35vh;
+margin-left: 80px;
+margin-top: 32px;
+}
+
+.titulo__cv {
+    margin-left: 4vw;
+    width: 75%;
+}

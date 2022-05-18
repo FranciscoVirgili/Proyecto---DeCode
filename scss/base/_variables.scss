@@ -1,6 +1,8 @@
-$color-principal: #e2e1da;    
+$color-principal: #e2e1da;   
 $display: flex;
 $height: 10vh;
+$width: 100vw;
+$margin: auto;
 
 /* MAPS */
 
@@ -13,9 +15,18 @@ $tamanio-tipografia: (
 $colores:(
    principal: $color-principal,
    encabezado: rgba(224, 212, 197, 0.4),
+   tipografia: black,
 );
 
 /* EXTEND */
+
+%iconos{
+    width: 30px;
+    height: 30px;
+    margin-left: -32px;;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
 
 %flex-center {
     display: flex;

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DeCode-Contacto</title>
     <link rel="icon" href="imagenes/logo.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&display=swap" rel="stylesheet">
@@ -14,8 +14,8 @@
 </head>
 
 <body class="body__contacto">
-        <header>
-         <nav class="navbar navbar-light fixed-top ">
+    <header>
+        <nav class="navbar navbar-light fixed-top ">
             <div class="container-fluid">
               <a href="./Index.html"><img src="./imagenes/Deco.png" alt="Decode" class="logo__estudio"></a>
               <button class="navbar-toggler vw-28" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -34,32 +34,30 @@
                 </ul> 
             </div>
           </nav>
-        </header>
-    
-    <section class="flex__datos">
-            <h3 class="titulo__contacto">Datos de Contacto</h3>
-            <ul class="lista__contacto">
-                <li>santiagozenteno@decode.com</li>
-                <li>+54387-456132</li>
-                <li>Adolfo Guemes 493</li>
-                <li>Ciudad de Salta - 4400</li>
-            </ul>
-        
-        <div class="ubicacion">
+    </header>
+     
+    <div class="ubicacion">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.3496688565087!2d-65.41971898555968!3d-24.783477384090293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3b76c348a81%3A0x9edbf15ca793f39f!2sDr.%20A.%20G%C3%BCemes%20493%2C%20A4400%20Salta!5e0!3m2!1ses-419!2sar!4v1649213117273!5m2!1ses-419!2sar" class="ubicacion__g"></iframe> 
+    </div>
+  
+    <div class="flex__datos">
+        <h2 class="titulo__contacto">Datos de Contacto</h2>
+        <ul class="lista__contacto">
+            <li><img src="./iconos/email.png"> santiagozenteno@decode.com</li>
+            <li><img src="./iconos/celular.png">+54387-456132</li>
+            <li><img src="./iconos/ubicacion.png">Adolfo Guemes 493 - Ciudad de Salta</li>
+        </ul>
+    </div>
+    
+    <section class="cv">
+    <form>
+        <div class="titulo__cv">
+        <h2>Sumate al equipo y dejanos tu curriculum</h2>
+        <div class="mb-3">
+            <label for="formFile" class="form-label"></label>
+            <input class="form-control" type="file" id="formFile">
         </div>
-
-    
-
-        <form class="cv">
-            <div class="titulo__cv">
-            <h3>Sumate al equipo y dejanos tu curriculum</h3>
-            <div class="mb-3">
-                <label for="formFile" class="form-label"></label>
-                <input class="form-control" type="file" id="formFile">
-            </div>
-        </form>
-    
+    </form>
     </section>
     
     <footer>
