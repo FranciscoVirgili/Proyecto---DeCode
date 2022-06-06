@@ -2,6 +2,11 @@
     background-color:  #e2e1da;    
 }
 
+h1{
+    text-align: center;
+    margin: 2rem !important; 
+}
+
 .logo__img{
     width: 200px;
     height: 100px;
@@ -31,7 +36,7 @@
     margin-bottom: 10vh;
 }
 
-.proyecto__container span {
+.contenedor span {
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 6px;
@@ -40,4 +45,9 @@
 
 .contenedor div{
     margin-bottom: 35px;
+}
+
+.contenedor {
+    margin-left: 15%;
+    margin-top: 4rem
 }

@@ -17,17 +17,15 @@ header .flex__nav__lista, footer {
   height: 10vh;
   align-items: center; }
 
+.lista__contacto {
+  margin-left: 4vw;
+  font-size: 18px;
+  list-style: none;
+  margin-top: 3vh; }
+
 /* MIXIN */
-/* para llamar el mixin
-
-@include flexbox ($direction, $justify) si o si pasarlos en el orden declarado
-osea en la pagina que queres las variables pones:
-@include flexbox (column, center) ej.
-
-
-*/
 header {
-  width: 100vw;
+  width: 100%;
   height: 10vh;
   display: flex;
   flex-wrap: wrap;
@@ -39,11 +37,11 @@ header {
     width: 100%;
     height: 100vh;
     justify-content: flex-start;
-    font-size: larger;
+    font-size: 20px;
     list-style-type: none;
     flex-wrap: wrap; }
   header .flex__nav__link {
-    font-size: 1.2rem;
+    font-size: 30px;
     color: black;
     font-weight: bold;
     text-decoration: none; }
@@ -58,10 +56,10 @@ footer {
     justify-content: space-around;
     align-items: center;
     width: 15vw; }
-  footer .footer__logos {
+  footer .iconos__redessociales {
     width: 25px;
     height: 100%; }
-  footer h2 {
+  footer h3 {
     font-size: 20px; }
 
 .body__index {
@@ -100,7 +98,7 @@ footer {
   font-size: 27px !important; }
 
 .descripcion__estudio p {
-  font-size: 14px;
+  font-size: 18px;
   margin-left: 68px;
   animation-duration: 3s;
   animation-name: slidein;
@@ -120,8 +118,15 @@ footer {
   margin: 2% 0;
   font-weight: bold; }
 
+.grid__bosquejos {
+  display: flex;
+  width: 100%; }
+
+.imagenes__bosquejos {
+  width: 100%; }
+
 .estudio__grid {
-  font-size: 14px;
+  font-size: 18px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -132,7 +137,7 @@ footer {
 
 .equipo__descripcion {
   text-align: justify;
-  font-size: 14px; }
+  font-size: 18px; }
 
 .equipo__descripcion p {
   width: 85%;
@@ -151,6 +156,10 @@ footer {
 .imagen__arquitecto {
   height: 30vh;
   filter: grayscale(0.8); }
+
+h4 {
+  margin-left: 10vw;
+  margin-bottom: 10vh; }
 
 @media only screen and (max-width: 768px) {
   header {
@@ -202,20 +211,27 @@ footer {
     font-size: 20px; }
   .ubicacion__g {
     width: 40%; }
+  .ubicacion {
+    width: 85% !important; }
+  .grid__datos {
+    display: flex !important;
+    flex-direction: column; }
+  .redesContactos h2 {
+    margin-top: 6vh;
+    margin-left: 6vw; }
+  .lista__redesContacto {
+    margin-left: 20vw !important; }
   .servicio {
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: fit-content; }
+    width: 100%;
+    margin-top: 6vh; }
+  .servicio p {
+    margin-left: 9vw !important; }
   .titulo__servicio {
     margin: 1rem; }
   .main__servicio {
     width: 100%;
     display: flex;
     flex-direction: column; }
-  .servicio {
-    width: 100%;
-    margin-top: 14vh;
-    margin-left: 10vw; }
   .servicio__formulario {
     width: fit-content; }
   .tipoDeConstruccion {
@@ -237,19 +253,31 @@ footer {
 .titulo__contacto {
   margin-left: 7vw; }
 
-.flex__datos {
+.grid__datos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   height: 80%;
   color: black;
   margin-top: 10vh;
   margin-bottom: 14vh; }
 
-.lista__contacto {
-  margin-left: 7vw;
+.lista__contacto li {
+  padding: 1rem; }
+
+.iconos__contactos {
+  width: 30px; }
+
+.lista__redesContacto {
+  margin-left: 0vw;
   font-size: 18px;
   list-style: none;
   margin-top: 3vh; }
 
-.lista__contacto li {
+.lista__redesContacto a {
+  margin-right: 1rem; }
+
+.lista__redesContacto li {
   padding: 1rem; }
 
 .ubicacion {
@@ -311,6 +339,10 @@ footer {
 .body__proyectos {
   background-color: #e2e1da; }
 
+h1 {
+  text-align: center;
+  margin: 2rem !important; }
+
 .logo__img {
   width: 200px;
   height: 100px;
@@ -332,7 +364,7 @@ footer {
   margin-top: 20vh;
   margin-bottom: 10vh; }
 
-.proyecto__container span {
+.contenedor span {
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 6px;
@@ -340,3 +372,7 @@ footer {
 
 .contenedor div {
   margin-bottom: 35px; }
+
+.contenedor {
+  margin-left: 15%;
+  margin-top: 4rem; }

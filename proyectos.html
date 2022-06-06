@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos-DeCode</title>
+    <title>DeCode - Proyectos</title>
     <link rel="icon" href="imagenes/logo.png">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,37 +22,35 @@
           <button class="navbar-toggler vw-28" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" width: 28vw style="background-color: rgb(223 220 211);">
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: rgb(223 220 211);">
             <div class="offcanvas-header">
               <a href="./Index.html"><h5 class="offcanvas-title" id="offcanvasNavbarLabel">DeCode</h5></a>
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <ul class="flex__nav__lista flex-column vh-100 justify-content-start align-items-center">
-                <li class="m-1"><a href="./estudio.html" class="flex__nav__link">Estudio</a></li>
-                <li class="m-1"><a href="./proyectos.html" class="flex__nav__link">Proyectos</a></li>
-                <li class="m-1"><a href="./contacto.html" class="flex__nav__link" >Contacto</a></li>
-                <li class="m-1"><a href="./servicios.html" class="flex__nav__link">Servicios</a></li>
-            </ul> 
+            <ul class="flex__nav__lista ">
+                <li class="m-1" style="margin: 2rem !important"><a href="./estudio.html" class="flex__nav__link">Estudio</a></li>
+                <li class="m-1"style="margin: 2rem !important"><a href="./proyectos.html" class="flex__nav__link">Proyectos</a></li>
+                <li class="m-1"style="margin: 2rem !important"><a href="./contacto.html" class="flex__nav__link" >Contacto</a></li>
+                <li class="m-1"style="margin: 2rem !important"><a href="./servicios.html" class="flex__nav__link">Servicios</a></li>
+            </ul>
         </div>
       </nav>
 </header>
   
 
-    <main class="main__proyecto">
-        
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="width: 70%;">
+<section class="proyecto__tipal">
+      <h1>Proyecto Tipal</h1>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="width: 70%;
+        margin-left: 15%;">
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="10000">
-                <img src="./imagenes/proyecto1.jpeg" class="d-block w-100" alt="proyecto1">
+                <img src="./imagenes/proyectos/tipal1.jpg" class="d-block w-100" alt="proyectoTipal1">
               </div>
               <div class="carousel-item" data-bs-interval="6000">
-                <img src="./imagenes/proyecto2.jpeg" class="d-block w-100" alt="proyecto2">
+                <img src="./imagenes/proyectos/tipal2.jpeg" class="d-block w-100" alt="proyectoTipal2">
               </div>
               <div class="carousel-item" data-bs-interval="3000">
-                <img src="./imagenes/proyecto3.jpeg" class="d-block w-100" alt="proyecto3">
-              </div>
-              <div class="carousel-item">
-                <img src="./imagenes/proyecto4.jpeg" class="d-block w-100" alt="proyecto4">
+                <img src="./imagenes/proyectos/tipal3.jpeg" class="d-block w-100" alt="proyectoTipal3">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -64,15 +62,9 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-    </main>
 
-    <div class="proyecto__container d-flex">
-        <div class="contenedor row row-cols-2 m-5">
-          <div class="contenedor__2 col-lg-3 col-md-6 col-sm-12">
-              <img src="./imagenes/proyecto1.jpeg" width="240vw" height="250px">
-          </div>
-          <div class="contenedor__tipal col-lg-9 col-md-6 col-sm-12">
-            <h5>Proyecto Marina</h5>
+        <div class="contenedor">
+            <h5>Proyecto Tipal</h5>
             <p class="text-align-center">Contornos de trazos finos y simples. La elegancia resalta en este proyecto por la riqueza en el diseño y la decoración.</p>
             <ul class="iconos">
               <li><img src="./iconos/grupo-de-chat.png" class="personas"><span>Arquitectos:</span><span>Santiago Zenteno</span></li>
@@ -81,12 +73,38 @@
               <li><img src="./iconos/ubicacion.png" class="ubicación"><span>Ubiación:</span><span>Country "Las Marinas" al norte de la Ciudad de Salta</span></li>
             </ul>
           </div>
+  </section>
 
-          <div class="col-lg-3 col-md-6 col-sm-12">
-              <img src="./imagenes/proyecto2.jpeg" width="240vw" height="250px">
+  <section class="proyecto__marina">
+
+    <h1>Proyecto Marina</h1>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="width: 70%; margin-left: 15%">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./imagenes/proyectos/marina1.jpeg" class="d-block w-100" alt="proyectoMarina1">
           </div>
-          <div class="col-lg-9 col-md-6 col-sm-12">
-            <h5>Proyecto Tipal</h5>
+          <div class="carousel-item" data-bs-interval="8000">
+            <img src="./imagenes/proyectos/marina2.jpeg" class="d-block w-100" alt="proyectoMarina2">
+          </div>
+          <div class="carousel-item" data-bs-interval="6000">
+            <img src="./imagenes/proyectos/marina3.jpeg" class="d-block w-100" alt="proyectoMarina3">
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="./imagenes/proyectos/marina4.jpeg" class="d-block w-100" alt="proyectoMarina4">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="contenedor">
+            <h5>Proyecto Marina</h5>
             <p>Visión. Este proyecto refleja la imaginación del arquitecto en la correcta utilización de los espacios. Creatividad en cada rincón.</p>
             <ul class="iconos">
               <li><img src="./iconos/grupo-de-chat.png" class="personas"><span>Arquitectos:</span><span>Santiago Zenteno</span></li>
@@ -95,25 +113,73 @@
               <li><img src="./iconos/ubicacion.png" class="ubicación"><span>Ubiación:</span><span>Barrio Privado "El Tipal" al oeste de la Ciudad de Salta</span></li>
             </ul>
           </div>
-
-          <div class="col-lg-3 col-md-6 col-sm-12">
-              <img src="./imagenes/proyecto3.jpeg" width="240vw" height="250px">
-          </div>
-          <div class="col-lg-9 col-md-6 col-sm-12">
-            <h5>Proyecto Golf</h5>
-            <p>Arquitectura minimalista. Respeto de las formas con el proposito de conseguir un espacio funcional y más aprovechable. El proyecto Golf persigue la escencia de cada elemento.</p>
-            <ul class="iconos">
-              <li><img src="./iconos/grupo-de-chat.png" class="personas"><span>Arquitectos:</span><span>Santiago Zenteno</span></li>
-              <li><img src="./iconos/zona.png" class="area"><span>Area:</span><span>460mts <sup>2</sup></span></li>
-              <li><img src="./iconos/cliente.png" class="cliente"><span>Cliente:</span><span>Casa Privada</span></li>
-              <li><img src="./iconos/ubicacion.png" class="ubicación"><span>Ubiación:</span><span>Tres Cerritos al este de la Ciudad de Salta</span></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <img src="./imagenes/proyecto4.jpeg" width="240vw" height="250px">
-          </div>
-          <div class="col-lg-9 col-md-6 col-sm-12">
-            <h5>Proyecto Berbena</h5>
+      </div>
+  </section>  
+  
+  <section class="proyecto__golf">
+    <h1>Proyecto Golf</h1>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="width: 70%; margin-left: 15%">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="./imagenes/proyectos/golf1.jpeg" class="d-block w-100" alt="proyectoGolf1">
+        </div>
+        <div class="carousel-item" data-bs-interval="8000">
+          <img src="./imagenes/proyectos/golf2.jpeg" class="d-block w-100" alt="proyectoGolf2">
+        </div>
+        <div class="carousel-item" data-bs-interval="6000">
+          <img src="./imagenes/proyectos/golf3.jpeg" class="d-block w-100" alt="proyectoGolf3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  
+        <div class="contenedor">
+          <h5>Proyecto Golf</h5>
+          <p>Arquitectura minimalista. Respeto de las formas con el proposito de conseguir un espacio funcional y más aprovechable. El proyecto Golf persigue la escencia de cada elemento.</p>
+          <ul class="iconos">
+            <li><img src="./iconos/grupo-de-chat.png" class="personas"><span>Arquitectos:</span><span>Santiago Zenteno</span></li>
+            <li><img src="./iconos/zona.png" class="area"><span>Area:</span><span>460mts <sup>2</sup></span></li>
+            <li><img src="./iconos/cliente.png" class="cliente"><span>Cliente:</span><span>Casa Privada</span></li>
+            <li><img src="./iconos/ubicacion.png" class="ubicación"><span>Ubiación:</span><span>Tres Cerritos al este de la Ciudad de Salta</span></li>
+          </ul>
+        </div>
+      </div>
+  </section>
+  
+  <section class="proyecto__berbena">
+    <h1>Proyecto Berbena</h1>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="width: 70%; margin-left: 15%">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="./imagenes/proyectos/berbena.jpeg" class="d-block w-100" alt="proyectoBerbena">
+        </div>
+        <div class="carousel-item" data-bs-interval="8000">
+          <img src="./imagenes/proyectos/berbena1.jpeg" class="d-block w-100" alt="proyectoBerbena1">
+        </div>
+        <div class="carousel-item" data-bs-interval="6000">
+          <img src="./imagenes/proyectos/berbena2.jpeg" class="d-block w-100" alt="proyectoBerbena2">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  
+        
+      <div class="contenedor">
+        <h5>Proyecto Berbena</h5>
             <p>Redefinción del espacio donde el usuario puede sentir la armonía entre la naturaleza y el diseño. En cuanto a su materialidad, se busca que el proyecto estuviera compuesto por elementos básicos que generaran una limpieza visual permitiendo resaltar los espacios verdes con los relieves de la construcción.</p>
             <ul class="iconos">
               <li><img src="./iconos/grupo-de-chat.png" class="personas"><span>Arquitectos:</span><span>Santiago Zenteno</span></li>
@@ -121,24 +187,63 @@
               <li><img src="./iconos/cliente.png" class="cliente"><span>Cliente:</span><span>Saltapor</span></li>
               <li><img src="./iconos/ubicacion.png" class="ubicación"><span>Ubiación:</span><span>Country "La Berbena" al sur de la Ciudad de Salta</span></li>
             </ul>
-          </div>
         </div>
       </div>
-
     </section>
 
+    <section class="proyecto__santaclara">
+      <h1>Proyecto Santa Clara</h1>
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="width: 70%; margin-left: 15%">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./imagenes/proyectos/santaclara1.jpeg" class="d-block w-100" alt="proyectosantaclara1">
+          </div>
+          <div class="carousel-item" data-bs-interval="8000">
+            <img src="./imagenes/proyectos/santaclara2.jpeg" class="d-block w-100" alt="proyectosantaclara2">
+          </div>
+          <div class="carousel-item" data-bs-interval="6000">
+            <img src="./imagenes/proyectos/santaclara3.jpeg" class="d-block w-100" alt="proyectosantaclara3">
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="./imagenes/proyectos/santaclara4.jpeg" class="d-block w-100" alt="proyectosantaclara4">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+    
+        <div class="contenedor">
+                <h5>Proyecto Santa Clara</h5>
+                <p>Espacio, naturaleza y equilibrio de materiales. Las formas arquitectónicas redefinen el espacio en plena armonia con la naturaleza. Rodeados de cerros en un ambiente natural, el proyecto Santa Clara busca mimetizarse con la flora saleña</p>
+                <ul class="iconos">
+                  <li><img src="./iconos/grupo-de-chat.png" class="personas"><span>Arquitectos:</span><span>Santiago Zenteno</span></li>
+                  <li><img src="./iconos/zona.png" class="area"><span>Area:</span><span>547mts <sup>2</sup></span></li>
+                  <li><img src="./iconos/cliente.png" class="cliente"><span>Cliente:</span><span>Saltapor</span></li>
+                  <li><img src="./iconos/ubicacion.png" class="ubicación"><span>Ubiación:</span><span>Country "Santa Clara" al oeste de la Ciudad de Salta</span></li>
+                </ul>
+        
+              </div>
+            </div>
+      </section>
 
-    <footer>
-      <h3 style="font-size: medium;">DeCode Estudio de Arquitectura - Todos los derechos reservados</h3>  
+  <footer>
+      <h3>DeCode Estudio de Arquitectura - Todos los derechos reservados</h3>
       <div class="flex__redessociales">
           <a href="https://www.facebook.com" target="_blank">
-              <img src="./iconos/facebook.svg" class="footer__logos">
+              <img src="./iconos/facebook.svg" class="iconos__redessociales">
           </a>
           <a href="https://twitter.com" target="_blank">
-              <img src="./iconos/twitter.svg" class="footer__logos">
+              <img src="./iconos/twitter.svg" class="iconos__redessociales">
           </a>
           <a href="https://instagram.com" target="_blank">
-              <img src="./iconos/instagram.svg"class="footer__logos">
+              <img src="./iconos/instagram.svg"class="iconos__redessociales">
           </a>
       </div>
   </footer>

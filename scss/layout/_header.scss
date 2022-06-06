@@ -1,5 +1,5 @@
 header {
-    width: $width;
+    width: 100%;
     height: $height;
     display: $display;
     flex-wrap: wrap;
@@ -16,16 +16,21 @@ header {
         width: 100%;
         height: 100vh;
         justify-content: flex-start;
-        font-size: larger;
+        font-size: map-get($tamanio-tipografia, subtitulos);
         list-style-type: none;
         flex-wrap: wrap;
     }
     
+    .flex__nav__lista li:hover {
+ 
+    }
+
     .flex__nav__link{
-        font-size: 1.2rem;
+        font-size: 30px;
         color: black;
         font-weight: bold;
         text-decoration: none;
     }
-    
+
+  
 }

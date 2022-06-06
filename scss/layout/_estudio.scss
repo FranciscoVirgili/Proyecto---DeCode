@@ -48,6 +48,16 @@
     font-weight: bold;
 }
 
+.grid__bosquejos {
+    display: flex;
+    width: 100%;
+}
+
+.imagenes__bosquejos {
+    width: 100%;
+}
+
+
 .estudio__grid{
     font-size: map-get($tamanio-tipografia, parrafos);
     display: grid;
@@ -84,3 +94,8 @@
 .imagen__arquitecto{
     height: 30vh;
     filter: grayscale(0.8);}
+
+h4{
+   margin-left: 10vw;
+   margin-bottom: 10vh;
+}
